@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(204, 199, 199);
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+main .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 2rem 4rem;
+}
+
+.menu h1 {
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu i {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+main .hero {
+    width: 100%;
+    height: 100%;
+}
+
+main .hero .heroimage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .heroimage img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero>img {
+    position: absolute;
+    left: 18rem;
+    top: 12rem;
+    width: 240px;
+    height: 200px;
+}
+
+main .herotext {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    color: white;
+    text-align: center;
+    left: 8rem;
+    top: 26rem;
+    gap: 2rem;
+}
+
+.herotext h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.hero .btns button {
+    position: absolute;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: rgba(97, 41, 41, 0.445);
+    color: white;
+    padding: 14px 25px;
+    font-size: 1.5rem;
+    margin-left: 4px;
+    font-weight: 600;
+    border-radius: 1rem;
+    left: 10rem;
+    text-transform: capitalize;
+}
+
+main .section {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    top: 26cm;
+    position: absolute;
+    gap: 2ren;
+    padding: 4rem;
+    left: 4rem;
+    overflow: hidden;
+}
+
+.section>h1 {
+    position: absolute;
+    justify-self: center;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.section .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 7%;
+    position: relative;
+    top: 1cm;
+    gap: 2rem;
+    padding-right: 4rem;
+}
+
+.section .row .row1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    gap: 4rem;
+
+}
+
+.section .row .row1 img {
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    top: 5rem;
+    left: -3rem;
+}
+
+.section .row .row1 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.section .row .row1 h2 {
+    font-size: 1rem;
+}
+
+.section .row .row1 .rowtext {
+    padding: 2rem;
+}
+
+.column {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    object-fit: cover;
+    top: 11cm;
+}
+
+.column img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 12rem;
+}
+
+.column .col {
+    width: 40%;
+    height: 450px;
+    position: absolute;
+    top: 20cm;
+    left: 17cm;
+    background-color: white;
+}
+
+.column .col h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+.column .col h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 4rem;
+    word-spacing: 1rem;
+    padding: 0 4rem;
+}
+
+.column .col button {
+    position: absolute;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: none;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    font-size: 1.5rem;
+    margin-left: 4px;
+    font-weight: 600;
+    border-radius: 1rem;
+    left: 10rem;
+    text-transform: capitalize;
+    bottom: 0.5rem;
+}
+
+.about {
+    position: relative;
+    width: 80%;
+    height: 600px;
+    top: 35cm;
+    display: flex;
+    flex-direction: row;
+    left: 8rem;
+}
+
+.about .about1 {
+    width: 50%;
+    background-color: white;
+
+}
+
+.about img {
+    width: 50%;
+}
+
+.about h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: lighter;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 0 2rem;
+    word-spacing: 4px;
+    top: 1rem;
+}
+
+.about .about2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    left: 2cm;
+    position: absolute;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.about .about2 h3 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-transform: capitalize;
+    padding-top: 1rem;
+
+}
+
+.column1 {
+    width: 80%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 37cm;
+    left: 3.5cm;
+}
+
+.column1 .col1 {
+
+    width: 40%;
+    height: 450px;
+    position: absolute;
+    top: 14cm;
+    left: -3cm;
+    background-color: white;
+}
+
+.column1 .col1 h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+.column1 .col1 h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 4rem;
+    word-spacing: 1rem;
+    padding: 0 2rem;
+}
+
+.column1 .col1 button {
+    position: absolute;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: none;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    font-size: 1rem;
+    margin-left: 4px;
+    font-weight: 600;
+    border-radius: 1rem;
+    left: 9rem;
+    text-transform: capitalize;
+    bottom: 2.5rem;
+}
+
+.item {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 45cm;
+    gap: 2rem;
+}
+
+.item>h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.item>h2 {
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    left: 14rem;
+    position: absolute;
+    top: 3cm;
+}
+
+.item .listitem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    gap: 2cm;
+    top: 5cm;
+    left: 2cm;
+}
+
+.item .listitem .item1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.listitem .item1 img {
+    width: 100%;
+    height: 300px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    top: 57cm;
+}
+
+.footer img {
+    width: 100%;
+    height: 120vh;
+}
+
+.footer .contact .contact1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3cm;
+    left: 18cm;
+    gap: 2rem;
+    border: 1px solid black;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.contact1 .input {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 1.5cm;
+
+
+
+}
+
+.contact1 h1 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.contact1 .input .input1 label {
+    color: #111;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.contact1 .input .input1 input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #333;
+    /* border-bottom: 20px solid #111; */
+    padding: 10px 35px;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.contact1 button {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #eee;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+.contact .row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 2rem;
+    left: 17cm;
+    top: 14cm;
+}
+
+.row .row1 h1 {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.row .row1 h2,
+h3,
+h4 {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.row .row1 h2 a {
+    text-decoration-color: orange;
+    color: black;
+}
